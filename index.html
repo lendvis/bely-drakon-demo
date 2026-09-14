@@ -1,0 +1,727 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#f4f1ea">
+<title>Белый дракон — тату и перманент в Самаре, Революционная, 70</title>
+<meta name="description" content="Демо-макет сайта тату-студии «Белый дракон»: татуировки по индивидуальному эскизу, перекрытие старых работ, перманент бровей, обучение мастеров. Самара, Революционная, 70.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=Fira+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+/* ══ Не мрачный тату-подвал. Студия у них светлая, это трижды повторяется
+      в отзывах, а работы — тонкая чёрная линия с красными акцентами.
+      Отсюда лист бумаги, тушь и киноварь печати. ══ */
+:root{
+  --paper:#f4f1ea;
+  --paper-2:#fbfaf7;
+  --ink:#16130f;
+  --ink-2:#3d3830;
+  --ink-soft:#6f675c;
+  --vermilion:#b4261a;   /* красные акценты в её работах */
+  --wood:#a8763f;        /* обожжённая рама зеркала в зале */
+  --rule:#ded7c8;
+  --fd:'Yeseva One',Georgia,serif;
+  --fb:'Fira Sans','Helvetica Neue',Arial,sans-serif;
+  --pad:clamp(1.1rem,4.5vw,3.4rem);
+  --e-out:cubic-bezier(.23,1,.32,1);
+  --e-both:cubic-bezier(.77,0,.175,1);
+}
+html{color-scheme:light;scroll-behavior:smooth;overflow-x:clip}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{
+  margin:0;position:relative;background:var(--paper);color:var(--ink);
+  font-family:var(--fb);font-size:16px;line-height:1.62;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--fd);font-weight:400;margin:0;line-height:1.16;text-wrap:balance}
+h1,h2,h3,.mark b,.seal,.fact b,.depends b,.zone-now b{font-synthesis-weight:none}
+:focus-visible{outline:2px solid var(--vermilion);outline-offset:3px}
+section{position:relative;scroll-margin-top:66px}
+
+.wrap{max-width:1140px;margin:0 auto;padding-inline:var(--pad)}
+.num{font-variant-numeric:tabular-nums}
+
+/* ── Кнопки ── */
+.btn{display:inline-flex;align-items:center;justify-content:center;
+  padding:.85rem 1.6rem;min-height:48px;border:1px solid var(--ink);
+  background:none;color:var(--ink);font:inherit;font-size:14.5px;font-weight:500;
+  letter-spacing:.005em;text-decoration:none;cursor:pointer;
+  touch-action:manipulation;-webkit-tap-highlight-color:transparent;
+  transition:transform 160ms var(--e-out),background 220ms var(--e-out),color 220ms var(--e-out)}
+.btn:active{transform:scale(.97)}
+.btn-fill{background:var(--vermilion);border-color:var(--vermilion);color:#fff}
+@media (hover:hover) and (pointer:fine){
+  .btn:hover{background:var(--ink);color:var(--paper)}
+  .btn-fill:hover{background:#8f1d13;border-color:#8f1d13;color:#fff}
+}
+
+/* ── Шапка ── */
+.top{position:sticky;top:0;z-index:60;background:rgba(244,241,234,.9);
+  backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--rule)}
+.top-in{display:flex;align-items:center;gap:1rem;min-height:62px;justify-content:space-between}
+.mark{display:flex;align-items:baseline;gap:.55rem;text-decoration:none;flex-shrink:0}
+.mark b{font-family:var(--fd);font-size:1.08rem;font-weight:400;letter-spacing:.005em}
+.mark i{font-style:normal;font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-soft)}
+.top nav{display:none;gap:1.4rem;font-size:13.5px}
+.top nav a{text-decoration:none;color:var(--ink-2);transition:color 200ms var(--e-out)}
+.tel{display:none;font-size:13.5px;text-decoration:none;color:var(--ink-2);white-space:nowrap}
+@media (hover:hover) and (pointer:fine){.top nav a:hover{color:var(--vermilion)}}
+@media(min-width:900px){.top nav{display:flex}.tel{display:block}}
+.top .btn{padding:.7rem 1.15rem;min-height:42px;font-size:13.5px}
+@media(max-width:560px){.mark i{display:none}.top-in{gap:.5rem}
+  .top .btn{padding:.65rem .9rem;font-size:12.5px}}
+
+/* ── Печать: красный штамп с номером раздела ── */
+.seal{display:inline-grid;place-items:center;width:44px;height:44px;flex-shrink:0;
+  background:var(--vermilion);color:#fff;font-family:var(--fd);font-size:1.05rem;
+  font-variant-numeric:tabular-nums;border-radius:3px;
+  box-shadow:1px 1px 0 rgba(180,38,26,.28)}
+.eyebrow{display:flex;align-items:center;gap:.85rem;margin:0 0 1.2rem;
+  font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--ink-soft)}
+
+/* ── Первый экран: лист с рамкой, как эскиз ── */
+.hero{padding:clamp(2.2rem,6vw,4rem) 0 clamp(2.4rem,6vw,4rem)}
+.sheet{background:var(--paper-2);border:1px solid var(--rule);
+  padding:clamp(1.5rem,5vw,3.4rem);position:relative}
+.sheet::before{content:"";position:absolute;inset:9px;border:1px solid var(--rule);
+  pointer-events:none}
+.hero-grid{position:relative;display:grid;gap:clamp(1.8rem,4vw,3rem);align-items:center}
+@media(min-width:900px){.hero-grid{grid-template-columns:1.1fr .9fr}}
+.hero h1{font-size:clamp(2.7rem,9.5vw,5.4rem);font-weight:400;letter-spacing:.01em}
+.hero h1 span{color:var(--vermilion)}
+.kicker{font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--ink-soft);margin:0 0 1rem}
+.lede{font-size:clamp(1.08rem,2.7vw,1.38rem);line-height:1.5;font-weight:400;
+  margin:1.4rem 0 0;max-width:34ch;color:var(--ink-2)}
+.hero p.small{font-size:14.5px;color:var(--ink-soft);max-width:46ch;margin:1rem 0 0}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.7rem}
+/* на узком экране кнопки разной ширины дают рваный правый край */
+@media(max-width:560px){.hero-cta{display:grid;gap:.6rem}.hero-cta .btn{width:100%}}
+.hero-pic{position:relative}
+.hero-pic img{width:100%;aspect-ratio:3/4;object-fit:cover;border:1px solid var(--rule)}
+.hero-pic figcaption{font-size:11.5px;color:var(--ink-soft);margin-top:.5rem;font-style:italic}
+
+/* цифры */
+.facts{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;
+  background:var(--rule);border:1px solid var(--rule);margin-top:clamp(1.8rem,4vw,2.6rem)}
+@media(min-width:760px){.facts{grid-template-columns:repeat(4,1fr)}}
+.fact{background:var(--paper-2);padding:1.05rem 1.05rem}
+.fact b{display:block;font-family:var(--fd);font-size:clamp(1.45rem,4vw,2rem);
+  line-height:1;font-variant-numeric:tabular-nums}
+.fact span{display:block;font-size:12px;color:var(--ink-soft);margin-top:.4rem;line-height:1.35}
+
+/* ── Общее для полос ── */
+.band{padding:clamp(3rem,8vw,5.6rem) 0}
+.band-ink{background:var(--ink);color:var(--paper)}
+.band-ink .eyebrow{color:rgba(244,241,234,.6)}
+.band-ink .head p{color:rgba(244,241,234,.74)}
+.head{max-width:46ch;margin-bottom:clamp(1.8rem,4vw,2.8rem)}
+.head h2{font-size:clamp(1.7rem,4.6vw,2.55rem)}
+.head p{font-size:15px;color:var(--ink-soft);margin:.85rem 0 0;max-width:54ch}
+
+/* ── Что делает: список с буквицей у первого ── */
+.does{display:grid;gap:1px;background:var(--rule);border-block:1px solid var(--rule)}
+@media(min-width:780px){.does{grid-template-columns:repeat(2,1fr)}}
+.do{background:var(--paper);padding:1.3rem 1.35rem}
+.do h3{font-size:1.2rem;margin-bottom:.35rem}
+.do p{margin:0;font-size:14px;color:var(--ink-soft)}
+.do .src{display:block;margin-top:.5rem;font-size:12px;font-style:italic;color:var(--wood)}
+
+/* ── Карта зон: её работы разложены по телу ── */
+.zones{display:grid;gap:clamp(1.4rem,3.5vw,2.4rem)}
+@media(min-width:880px){.zones{grid-template-columns:300px 1fr;align-items:start}}
+.figure-wrap{background:var(--paper-2);border:1px solid var(--rule);padding:1rem;
+  position:sticky;top:78px}
+@media(max-width:879px){.figure-wrap{position:static}}
+.fig svg{width:100%;height:auto;display:block}
+.fig .body{fill:none;stroke:#cdc5b5;stroke-width:15;stroke-linejoin:round;stroke-linecap:round}
+.fig .body circle,.fig .body rect{fill:#cdc5b5;stroke-width:0}
+.fig .hit{fill:rgba(22,19,15,.05);stroke:var(--ink);stroke-width:.8;stroke-dasharray:2 2;
+  cursor:pointer;transition:fill 220ms var(--e-out),stroke 220ms var(--e-out)}
+.fig .hit:focus-visible{outline:none;stroke:var(--vermilion);stroke-width:1.6}
+@media (hover:hover) and (pointer:fine){
+  .fig .hit:hover{fill:rgba(180,38,26,.16);stroke:var(--vermilion)}
+}
+.fig .hit[aria-pressed="true"]{fill:rgba(180,38,26,.3);stroke:var(--vermilion);
+  stroke-width:1.4;stroke-dasharray:none}
+.zone-now{margin-top:.9rem;font-size:13px;color:var(--ink-soft);min-height:3.2em}
+.zone-now b{display:block;font-family:var(--fd);font-size:1.15rem;color:var(--ink)}
+.zone-chips{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:1.2rem}
+.chip{border:1px solid var(--rule);background:var(--paper-2);color:var(--ink-2);
+  font:inherit;font-size:13px;padding:.42rem .8rem;min-height:38px;cursor:pointer;
+  touch-action:manipulation;-webkit-tap-highlight-color:transparent;white-space:nowrap;
+  transition:transform 160ms var(--e-out),border-color 200ms var(--e-out),color 200ms var(--e-out)}
+.chip:active{transform:scale(.97)}
+.chip[aria-pressed="true"]{border-color:var(--vermilion);color:var(--vermilion)}
+@media (hover:hover) and (pointer:fine){.chip:hover{border-color:var(--ink)}}
+.chip .n{font-variant-numeric:tabular-nums;color:var(--ink-soft);margin-left:.35rem}
+
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(.5rem,1.6vw,.9rem)}
+@media(min-width:620px){.grid{grid-template-columns:repeat(3,1fr)}}
+.grid figure{margin:0}
+.grid img{width:100%;aspect-ratio:3/4;object-fit:cover;border:1px solid var(--rule);
+  background:var(--paper-2)}
+.grid figcaption{font-size:11.5px;color:var(--ink-soft);margin-top:.45rem}
+.grid figcaption b{display:block;color:var(--vermilion);font-weight:500;
+  font-size:10.5px;letter-spacing:.12em;text-transform:uppercase}
+@supports (animation-timeline:view()){
+  @media (prefers-reduced-motion:no-preference){
+    .grid figure{animation:rise linear both;animation-timeline:view();
+      animation-range:entry 6% entry 56%}
+  }
+}
+@keyframes rise{from{transform:translateY(20px)}to{transform:none}}
+
+/* ── Обучение ── */
+.teach{display:grid;gap:clamp(1.4rem,3.5vw,2.4rem)}
+@media(min-width:860px){.teach{grid-template-columns:1fr 1fr;align-items:center}}
+.teach img{width:100%;aspect-ratio:4/5;object-fit:cover;border:1px solid rgba(244,241,234,.2)}
+.quote{font-family:var(--fd);font-size:clamp(1.05rem,2.8vw,1.32rem);line-height:1.45;
+  border-left:2px solid var(--vermilion);padding-left:1rem;margin:1.4rem 0 0}
+.quote cite{display:block;font-family:var(--fb);font-style:normal;font-size:12.5px;
+  color:rgba(244,241,234,.6);margin-top:.6rem}
+
+/* ── Мастер: текст обтекает круглый портрет ── */
+.master{background:var(--paper-2);border:1px solid var(--rule);padding:clamp(1.4rem,4vw,2.6rem)}
+.master .portrait{width:clamp(130px,30vw,210px);aspect-ratio:1;border-radius:50%;
+  object-fit:cover;float:right;margin:0 0 1rem 1.4rem;
+  shape-outside:circle(50%);shape-margin:14px}
+.master h2{font-size:clamp(1.6rem,4.4vw,2.4rem);margin-bottom:.8rem}
+.master p{margin:0 0 .9rem;max-width:72ch}
+.master .lead::first-letter{font-family:var(--fd);font-size:3.1em;float:left;
+  line-height:.82;padding:.06em .14em 0 0;color:var(--vermilion)}
+.master .tg{font-size:13.5px;color:var(--ink-soft);font-style:italic}
+
+/* ── Студия ── */
+.studio{display:grid;gap:clamp(.5rem,1.6vw,.9rem);grid-template-columns:repeat(2,1fr)}
+@media(min-width:760px){.studio{grid-template-columns:repeat(4,1fr)}}
+.studio img{width:100%;height:100%;object-fit:cover;aspect-ratio:1;border:1px solid var(--rule)}
+.studio .wide{grid-column:span 2}
+.studio .wide img{aspect-ratio:2.06/1}
+.perks{list-style:none;margin:clamp(1.4rem,3.5vw,2.2rem) 0 0;padding:0;
+  display:grid;gap:.6rem 1.5rem;grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
+.perks li{font-size:14px;color:var(--ink-soft);padding-left:1.1rem;position:relative}
+.perks li::before{content:"";position:absolute;left:0;top:.66em;width:6px;height:6px;
+  background:var(--vermilion)}
+
+/* ── Отзывы ── */
+.revs{columns:1;column-gap:clamp(1rem,2.4vw,1.5rem)}
+@media(min-width:680px){.revs{columns:2}}
+@media(min-width:1020px){.revs{columns:3}}
+.rev{break-inside:avoid;background:var(--paper-2);border:1px solid var(--rule);
+  padding:1.1rem 1.15rem;margin-bottom:clamp(1rem,2.4vw,1.5rem)}
+.rev p{margin:0;font-size:14.5px}
+.rev .who{display:flex;justify-content:space-between;gap:.8rem;margin-top:.8rem;
+  padding-top:.6rem;border-top:1px solid var(--rule);font-size:12px;color:var(--ink-soft)}
+.rev .who b{font-weight:500;color:var(--ink)}
+
+/* ── Цена ── */
+.price-note{background:var(--paper-2);border:1px solid var(--rule);
+  padding:clamp(1.3rem,4vw,2.4rem);display:grid;gap:1.2rem}
+@media(min-width:820px){.price-note{grid-template-columns:1.1fr .9fr;align-items:start}}
+.depends{list-style:none;margin:0;padding:0;display:grid;gap:1px;background:var(--rule);
+  border:1px solid var(--rule)}
+.depends li{background:var(--paper);padding:.85rem 1rem;font-size:14px}
+.depends b{font-family:var(--fd);font-size:1rem;display:block}
+.depends span{color:var(--ink-soft);font-size:13px}
+
+/* ── Форма ── */
+.form{display:grid;gap:.85rem;max-width:560px}
+.form label{display:grid;gap:.3rem;font-size:12px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--ink-soft)}
+.form input,.form select,.form textarea{font:inherit;font-size:15px;color:var(--ink);
+  background:var(--paper-2);border:1px solid var(--rule);padding:.7rem .8rem;
+  min-height:46px;width:100%;border-radius:0}
+.form textarea{min-height:92px;resize:vertical}
+.err{color:var(--vermilion);font-size:12.5px;text-transform:none;letter-spacing:0;
+  min-height:1.1em}
+.hint{font-size:12.5px;color:var(--ink-soft);margin:0}
+.ok{border:1px solid var(--vermilion);padding:1rem 1.1rem;font-size:14.5px}
+
+/* ── Карта ── */
+.find{display:grid;gap:clamp(1.3rem,3.5vw,2.2rem)}
+@media(min-width:900px){.find{grid-template-columns:1fr 1.1fr;align-items:start}}
+.map{position:relative;min-height:clamp(280px,42vw,420px);border:1px solid var(--rule)}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
+.info dl{margin:0;display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule)}
+.info div{background:var(--paper-2);padding:.9rem 1rem;display:grid;
+  grid-template-columns:8rem 1fr;gap:.85rem;align-items:baseline}
+.info dt{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft)}
+.info dd{margin:0;font-size:14.5px}
+.info dd a{color:var(--vermilion);text-decoration:none;border-bottom:1px solid var(--rule)}
+@media(max-width:520px){.info div{grid-template-columns:1fr;gap:.2rem}}
+
+/* ── Подвал ── */
+.foot{border-top:1px solid var(--rule);padding:2rem 0 2.6rem;font-size:12.5px;color:var(--ink-soft)}
+.foot p{margin:0 0 .5rem;max-width:76ch}
+.foot a{color:var(--vermilion)}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{animation-duration:.01ms!important;animation-iteration-count:1!important}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap top-in">
+    <a class="mark" href="#top"><b>Белый дракон</b><i>тату и перманент</i></a>
+    <nav>
+      <a href="#zones">Куда бьют</a>
+      <a href="#works">Работы</a>
+      <a href="#teach">Обучение</a>
+      <a href="#revs">Отзывы</a>
+      <a href="#find">Как доехать</a>
+    </nav>
+    <a class="tel" href="tel:+79879546404">+7 (987) 954-64-04</a>
+    <a class="btn btn-fill" href="#zapis">Записаться</a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ══ Первый экран ══ -->
+<section class="hero">
+  <div class="wrap">
+    <div class="sheet">
+      <div class="hero-grid">
+        <div>
+          <p class="kicker">Самара · Революционная, 70, стр. 3</p>
+          <h1>Белый <span>дракон</span></h1>
+          <p class="lede">Эскиз здесь не выбирают из каталога. Его приносят своим и переделывают под вас.</p>
+          <p class="small">Это самое частое, что пишут в отзывах: «помогла с эскизом, переделала его под меня», «помогла доработать», «помогла разработать». Двенадцать человек из тридцати четырёх сказали про эскиз отдельно.</p>
+          <div class="hero-cta">
+            <a class="btn btn-fill" href="#zapis">Написать про идею</a>
+            <a class="btn" href="#zones">Посмотреть по зонам</a>
+          </div>
+        </div>
+        <figure class="hero-pic" style="margin:0">
+          <img src="img/thigh-dragon.jpg" alt="Дракон с пионами на бедре, работа студии «Белый дракон»"
+               width="960" height="1280" fetchpriority="high">
+          <figcaption>Дракон с пионами. Название студии не случайное: драконов и змей она бьёт чаще всего.</figcaption>
+        </figure>
+      </div>
+
+      <div class="facts">
+        <div class="fact"><b class="num">4,9</b><span>средняя оценка, 40 оценок на Яндекс Картах</span></div>
+        <div class="fact"><b class="num">34</b><span>отзыва, и ни одного отрицательного</span></div>
+        <div class="fact"><b class="num">2026</b><span>«Хорошее место» по версии Яндекс Карт</span></div>
+        <div class="fact"><b>до 22:00</b><span>ежедневно, без выходных</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ Что делает ══ -->
+<section class="band" id="does">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow"><span class="seal">1</span>Что здесь делают</p>
+      <h2>Тату, перекрытие, брови и обучение мастеров</h2>
+      <p>Всё ниже собрано с их карточки на Картах, из телеграм-канала и из отзывов. Ничего не добавлено.</p>
+    </div>
+    <div class="does" id="does-list"></div>
+  </div>
+</section>
+
+<!-- ══ Карта зон ══ -->
+<section class="band" id="zones" style="background:var(--paper-2);border-block:1px solid var(--rule)">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow"><span class="seal">2</span>Куда бьют</p>
+      <h2>Где на теле она уже работала</h2>
+      <p>Первый вопрос перед первой татуировкой обычно не «сколько стоит», а «а вот сюда вообще делают». Зоны собраны по её же снимкам: нажмите любую.</p>
+    </div>
+
+    <div class="zones">
+      <div class="figure-wrap">
+        <div class="fig">
+          <svg viewBox="0 0 200 380" role="group" aria-label="Схема зон тела">
+            <!-- фигура тушью, тонкой линией -->
+            <g class="body">
+              <circle cx="100" cy="34" r="15"/>
+              <line x1="100" y1="49" x2="100" y2="60"/>
+              <rect x="76" y="58" width="48" height="96" rx="17"/>
+              <path d="M82 66 C64 78 56 104 50 128 L44 176"/>
+              <path d="M118 66 C136 78 144 104 150 128 L156 176"/>
+              <path d="M91 152 C88 200 86 258 85 316"/>
+              <path d="M109 152 C112 200 114 258 115 316"/>
+            </g>
+            <g id="hits"></g>
+          </svg>
+        </div>
+        <p class="zone-now" id="zone-now"></p>
+      </div>
+
+      <div>
+        <div class="zone-chips" id="chips"></div>
+        <div class="grid" id="zone-grid"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ Работы целиком ══ -->
+<section class="band" id="works">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow"><span class="seal">3</span>Работы</p>
+      <h2>Тонкая линия, мягкая растушёвка, красный на сдачу</h2>
+      <p>Кадры с их карточки на Яндекс Картах и из телеграм-канала. Цвет не трогали: у татуировки цвет и есть работа. Снимки с узнаваемыми лицами не берём.</p>
+    </div>
+    <div class="grid" id="all-grid"></div>
+  </div>
+</section>
+
+<!-- ══ Обучение ══ -->
+<section class="band band-ink" id="teach">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow"><span class="seal">4</span>Обучение</p>
+      <h2>Сюда приходят и за профессией</h2>
+      <p>В карточке на Картах отдельной строкой стоит «обучение татуировке» и «коворкинг». В отзывах есть и ученицы, и модели с её мастер-классов.</p>
+    </div>
+    <div class="teach">
+      <div>
+        <p style="font-size:15px;color:rgba(244,241,234,.8);margin-top:0">
+          Она ведёт мастер-классы по випшейдингу — это техника мягкой градиентной растушёвки,
+          хлыстом от плотного к прозрачному. Ученицы работают на живых моделях под её присмотром.
+        </p>
+        <blockquote class="quote">Не просто рассказала теорию, а наглядно показывала каждый шаг процесса прямо на коже модели. Ответила на все вопросы, разборчиво и понятно.
+          <cite>Елизавета Пон, мастер, прошла повышение квалификации</cite></blockquote>
+        <blockquote class="quote">Как преподаватель Лиза следила за каждым движением, ориентировала ученицу, успокаивала меня, интересовалась о моих болевых ощущениях.
+          <cite>Анастасия Буканова, была моделью на мастер-классе</cite></blockquote>
+      </div>
+      <img src="img/sleeve-colour.jpg" alt="Крупный цветной рукав в работе" loading="lazy" width="600" height="800">
+    </div>
+  </div>
+</section>
+
+<!-- ══ Мастер ══ -->
+<section class="band" id="master">
+  <div class="wrap">
+    <div class="master">
+      <img class="portrait" src="img/master.jpg" alt="Елизавета, мастер студии «Белый дракон»"
+           loading="lazy" width="320" height="320">
+      <p class="eyebrow"><span class="seal">5</span>Мастер</p>
+      <h2>Лиза. Все тридцать четыре отзыва — про неё одну</h2>
+      <p class="lead">Студия маленькая и мастер в ней один. В отзывах её зовут то Лизой, то Елизаветой, и почти каждый второй отзыв — не про татуировку, а про то, как с ней сидеть несколько часов. «Несколько часов пролетели незаметно». «Поболтали, придумали идею для следующих тату». «На связи 24/7».</p>
+      <p>Есть постоянные, которые ходят к ней годами: «знакома с Лизой уже более 3 лет, сделала у неё более 5 татуировок, одна из которых крупный проект». Есть те, кто доверил ей первую в жизни: «свою первую татуировку доверила Лизе, не ошиблась». Есть мужья и жёны, которые пришли за парными.</p>
+      <p class="tg">В телеграме она подписывается «Лиза Аспид» и пишет коротко: «Собираем рукав из мультиков. На предплечье уместилось 11 персонажей, мой фаворит — ёжик, вышел очень милым».</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ Студия ══ -->
+<section class="band" id="studio" style="background:var(--paper-2);border-block:1px solid var(--rule)">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow"><span class="seal">6</span>Студия</p>
+      <h2>Светлая комната с фикусом, а не мрачный подвал</h2>
+      <p>Слово «светлая» встречается в отзывах трижды, «уютная» — девять раз. Ростовое зеркало в обожжённой раме с лампами, белые стены, живые деревья в кашпо, графика на стене. И тапочки на входе.</p>
+    </div>
+    <div class="studio">
+      <div class="wide"><img src="img/studio-hall.jpg" alt="Зал студии: зеркало с лампами, растения, рабочее место" loading="lazy" width="1280" height="620"></div>
+      <div><img src="img/studio-mirror.jpg" alt="Ростовое зеркало в деревянной раме с лампами" loading="lazy" width="960" height="960"></div>
+      <div><img src="img/studio-desk.jpg" alt="Машинка, картриджи и краски на рабочем столе" loading="lazy" width="853" height="853"></div>
+    </div>
+    <ul class="perks" id="perks"></ul>
+  </div>
+</section>
+
+<!-- ══ Отзывы ══ -->
+<section class="band" id="revs">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow"><span class="seal">7</span>Отзывы</p>
+      <h2>Тридцать четыре отзыва, ни одного отрицательного</h2>
+      <p>Настоящие, с их карточки на Яндекс Картах. Сокращены, имена оставлены как в оригинале.</p>
+    </div>
+    <div class="revs" id="revs-wall"></div>
+  </div>
+</section>
+
+<!-- ══ Цена ══ -->
+<section class="band" id="zapis" style="background:var(--paper-2);border-block:1px solid var(--rule)">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow"><span class="seal">8</span>Цена и запись</p>
+      <h2>Цену называют после эскиза, и это не отговорка</h2>
+      <p>Прайса нет ни на Картах, ни в канале. В шапке телеграма написано прямо: «Для консультации по стоимости и записи пиши». Пока эскиза нет, называть сумму просто не из чего.</p>
+    </div>
+
+    <div class="price-note">
+      <div>
+        <p style="margin-top:0;font-size:15px">От чего она зависит — видно по самим работам: маленькая веточка на запястье и рукав из одиннадцати персонажей это разные разговоры. Вот что меняет счёт:</p>
+        <ul class="depends" id="depends"></ul>
+        <p class="hint" style="margin-top:1rem">Сроки взяты из отзывов гостей, там эти цифры названы прямо. Это не обещание студии, а то, как получилось у конкретных людей.</p>
+      </div>
+
+      <div>
+        <form class="form" id="form" novalidate>
+          <label>Как вас зовут
+            <input type="text" name="name" autocomplete="name" required placeholder="Имя">
+            <span class="err" id="e-name"></span>
+          </label>
+          <label>Телефон или телеграм
+            <input type="tel" name="tel" autocomplete="tel" inputmode="tel" spellcheck="false"
+                   required placeholder="+7 900 000-00-00 или @ник">
+            <span class="err" id="e-tel"></span>
+          </label>
+          <label>Что задумали
+            <select name="what" id="what"></select>
+          </label>
+          <label>Расскажите про идею
+            <textarea name="note" placeholder="Например: дракон на предплечье, есть картинка для примера, хочу тонкой линией…"></textarea>
+          </label>
+          <button class="btn btn-fill" type="submit">Отправить идею</button>
+          <p class="hint">Это демо-макет: форма ничего не отправляет. На настоящем сайте заявка ушла бы Лизе в телеграм вместе с вашей картинкой.</p>
+        </form>
+        <div class="ok" id="ok" role="status" aria-live="polite" hidden></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ Как доехать ══ -->
+<section class="band" id="find">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow"><span class="seal">9</span>Адрес</p>
+      <h2>Революционная, 70, строение 3</h2>
+      <p>Первый этаж офисного здания, там же на этаже есть кофе. До метро «Гагаринская» меньше километра.</p>
+    </div>
+    <div class="find">
+      <div class="map">
+        <iframe src="https://yandex.ru/map-widget/v1/?oid=70660173594&amp;ol=biz&amp;ll=50.179599%2C53.206725&amp;z=17"
+                title="Белый дракон на Яндекс Картах" loading="lazy" allowfullscreen></iframe>
+      </div>
+      <div class="info">
+        <dl>
+          <div><dt>Адрес</dt><dd>Самара, Революционная ул., 70, стр. 3</dd></div>
+          <div><dt>Часы</dt><dd class="num">Ежедневно 9:00–22:00</dd></div>
+          <div><dt>Телефон</dt><dd><a href="tel:+79879546404">+7 (987) 954-64-04</a></dd></div>
+          <div><dt>Рядом</dt><dd>Метро «Гагаринская» 980 м, остановка «Революционная улица»</dd></div>
+          <div><dt>Написать</dt><dd><a href="https://t.me/Liza_aspid" target="_blank" rel="noopener">Телеграм</a> · <a href="https://wa.me/79879546404" target="_blank" rel="noopener">WhatsApp</a> · <a href="https://vk.com/white.drago" target="_blank" rel="noopener">ВКонтакте</a></dd></div>
+          <div><dt>Ещё</dt><dd>Wi-Fi, парковка, подарочные сертификаты</dd></div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p>Демо-макет. Фотографии, оценки и отзывы взяты с карточки заведения на Яндекс Картах и из открытого телеграм-канала студии. Студия к этой странице отношения не имеет и её не заказывала.</p>
+    <p>Разработка — студия Лендвис, <a href="https://lendvis.ru">lendvis.ru</a></p>
+  </div>
+</footer>
+
+<script>
+(() => {
+'use strict';
+const $ = id => document.getElementById(id);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+/* ── Что делают. Всё подтверждено карточкой, каналом или отзывами ── */
+const DOES = [
+  ['Татуировка по своему эскизу', 'Приносите идею или картинку, эскиз дорисовывают под вашу анатомию и место.',
+   'В карточке: «эскизы тату»'],
+  ['Перекрытие и коррекция старых', 'Старую работу перекрывают новой, подгоняя размер под то, что уже есть.',
+   'В карточке: «коррекция тату». В отзывах — четыре истории с перекрытием'],
+  ['Фрихенд', 'Рисунок кладут сразу по коже, без переводки. Так заполняют пустоты между старыми работами.',
+   'Из её канала: «Дополнили абстракциями пустующие места на руке. Фрихенд»'],
+  ['Перманентный макияж бровей', 'Второе направление студии, стоит прямо в названии категории на Картах.',
+   'В отзывах: «делала перманент бровей, всё понравилось»'],
+  ['Обучение татуировке', 'Курс и мастер-классы по випшейдингу, с работой на живых моделях.',
+   'В карточке: «обучение татуировке»'],
+  ['Коворкинг для мастеров', 'Место в студии для мастера со своей записью.',
+   'В карточке отдельной строкой: «коворкинг»']
+];
+$('does-list').innerHTML = DOES.map(([h, p, s]) =>
+  `<div class="do"><h3>${esc(h)}</h3><p>${esc(p)}</p><span class="src">${esc(s)}</span></div>`).join('');
+
+/* ── Работы с разметкой по зоне. Зона снята с самого снимка ── */
+const W = [
+  ['forearm-mountains','forearm','Горы и надпись'],
+  ['forearm-silhouettes','forearm','Силуэты'],
+  ['forearm-flower','forearm','Цветок'],
+  ['forearm-dragonlet','forearm','Дракончик'],
+  ['forearm-script','forearm','Надпись'],
+  ['forearm-cartoons','forearm','Одиннадцать персонажей'],
+  ['forearm-lion','forearm','Лев'],
+  ['forearm-graphic','forearm','Графика'],
+  ['forearm-red','forearm','Красная хризантема'],
+  ['sleeve-snake','arm','Змея на весь рукав'],
+  ['sleeve-colour','arm','Цветной проект'],
+  ['sleeve-colour-2','arm','Он же, ближе'],
+  ['sleeve-cartoons','arm','Рукав из мультиков'],
+  ['sleeve-snake-2','arm','Змея и графика'],
+  ['sleeve-dragon-red','arm','Красный дракон'],
+  ['sleeve-dragon','arm','Дракон'],
+  ['sleeve-dots','arm','Змея и точки'],
+  ['shoulder-cat','shoulder','Кот'],
+  ['ribs-moths','ribs','Мотыльки'],
+  ['ribs-graphic','ribs','Графика'],
+  ['ribs-large','ribs','Крупный проект'],
+  ['sternum-line','sternum','Тонкая линия'],
+  ['thigh-dragon','leg','Дракон и пионы'],
+  ['thigh-flowers','leg','Цветы'],
+  ['shin-snake','leg','Акварельная змея'],
+  ['thigh-script','leg','Надпись'],
+  ['wrist-branch','wrist','Веточка'],
+  ['wrist-branch-2','wrist','Она же, другой ракурс'],
+  ['neck-spider','neck','За ухом'],
+  ['pair-lighthouse','forearm','Парные маяки']
+];
+
+/* зоны: подпись и прямоугольник-мишень на схеме */
+const ZONES = [
+  ['neck',     'Шея и за ухом', 'Самое заметное место и самая тонкая работа.',            [86,44,28,16]],
+  ['shoulder', 'Плечо',         'Годится и для первой татуировки, и для начала рукава.',  [60,60,26,26]],
+  ['arm',      'Рукав целиком', 'Крупные проекты: змеи, драконы, цветные.',               [44,90,28,54]],
+  ['forearm',  'Предплечье',    'Самая частая зона в её работах.',                        [34,146,26,46]],
+  ['wrist',    'Запястье',      'Мелкая графика, тонкая линия.',                          [32,192,24,18]],
+  ['sternum',  'Грудина',       'Тонкая симметричная линия.',                             [88,74,24,26]],
+  ['ribs',     'Рёбра и бок',   'Больно, но просят часто.',                               [76,104,18,44]],
+  ['leg',      'Бедро и голень','Много места, видно только когда сами захотите.',         [78,170,38,120]]
+];
+
+let active = null;
+
+const hits = ZONES.map(([id, name, , r]) =>
+  `<rect class="hit" role="button" tabindex="0" aria-pressed="false" data-z="${id}"
+     x="${r[0]}" y="${r[1]}" width="${r[2]}" height="${r[3]}" rx="4">
+     <title>${esc(name)}</title></rect>`).join('');
+$('hits').innerHTML = hits;
+
+const count = z => W.filter(w => w[1] === z).length;
+$('chips').innerHTML =
+  `<button class="chip" data-z="" aria-pressed="true">Все зоны<span class="n">${W.length}</span></button>` +
+  ZONES.map(([id, name]) => `<button class="chip" data-z="${id}" aria-pressed="false">${esc(name)}<span class="n">${count(id)}</span></button>`).join('');
+
+const card = ([f, z, c]) => {
+  const zn = ZONES.find(x => x[0] === z);
+  return `<figure><img src="img/${f}.jpg" alt="${esc(c)} — работа студии «Белый дракон»"
+    loading="lazy" width="600" height="800">
+    <figcaption><b>${esc(zn ? zn[1] : '')}</b>${esc(c)}</figcaption></figure>`;
+};
+
+function render() {
+  const list = active ? W.filter(w => w[1] === active) : W;
+  $('zone-grid').innerHTML = list.map(card).join('');
+  const z = ZONES.find(x => x[0] === active);
+  $('zone-now').innerHTML = z
+    ? `<b>${esc(z[1])}</b>${esc(z[2])} Работ: <span class="num">${count(active)}</span>.`
+    : `<b>Все зоны</b>Нажмите на схему или на кнопку, чтобы оставить только одну.`;
+  document.querySelectorAll('.chip').forEach(b =>
+    b.setAttribute('aria-pressed', (b.dataset.z || null) === active));
+  document.querySelectorAll('.hit').forEach(r =>
+    r.setAttribute('aria-pressed', r.dataset.z === active));
+}
+
+const pick = z => { active = (active === z || !z) ? null : z; render(); };
+
+$('chips').addEventListener('click', e => {
+  const b = e.target.closest('.chip'); if (b) pick(b.dataset.z);
+});
+$('hits').addEventListener('click', e => {
+  const r = e.target.closest('.hit'); if (r) pick(r.dataset.z);
+});
+$('hits').addEventListener('keydown', e => {
+  if (e.key !== 'Enter' && e.key !== ' ') return;
+  const r = e.target.closest('.hit'); if (!r) return;
+  e.preventDefault(); pick(r.dataset.z);
+});
+render();
+
+/* полная галерея — тем же шаблоном, без фильтра */
+$('all-grid').innerHTML = W.map(card).join('');
+
+/* ── Что есть в студии ── */
+$('perks').innerHTML = [
+  'Wi-Fi и парковка у здания',
+  'Кофе на первом этаже',
+  'Тапочки на входе',
+  'Музыка или сериал во время сеанса',
+  'Подарочные сертификаты',
+  'Запись заранее, в том числе на вечер',
+  'Работает без выходных',
+  'Можно прийти просто на консультацию'
+].map(p => `<li>${esc(p)}</li>`).join('');
+
+/* ── От чего зависит счёт ── */
+$('depends').innerHTML = [
+  ['Размер и место', 'Веточка на запястье и рукав из одиннадцати персонажей — разные работы.'],
+  ['Сколько сеансов', 'Ногу в отзыве забили за два дня. Сеанс на несколько часов — обычное дело.'],
+  ['Свой эскиз или её', 'Эскиз дорабатывают под вас, и это часть работы, а не бесплатное приложение.'],
+  ['Перекрытие старого', 'Перекрыть сложнее, чем набить по чистому: нужно подогнать размер под то, что уже есть.']
+].map(([b, s]) => `<li><b>${esc(b)}</b><span>${esc(s)}</span></li>`).join('');
+
+/* ── Отзывы ── */
+const REVS = [
+  ['Дарья','25 февраля','тату по своему эскизу',
+   'Лиза — потрясающий комфортный человек и профессионал. Помогла с эскизом, переделала его под меня, и всё прошло потрясающе. Во время сеанса поболтали, придумали идею для следующих тату. Сама студия очень уютная, чистая.'],
+  ['Ирина Борисенко','22 сентября 2025','перекрытие старой татуировки',
+   'Нужно было перекрыть маленькую татуировку другой, эскиз уже был, всё быстро подогнали под нужный размер, подрисовали где нужно, и получилось просто шикарно. Тяжело найти очень хорошего мастера, так ещё и по приятным ценам.'],
+  ['Наталья','12 сентября 2025','тату и перманент бровей',
+   'Очень красивое, приятное место, всё со вкусом подобрано, атмосфера тёплая и уютная, сюда хочется приходить и не хочется отсюда уходить. Лиза выслушает, что хочет клиент, и подскажет, где будет лучше выглядеть.'],
+  ['Екатерина Ферафонтова','27 августа 2025','первая большая работа',
+   'Выбирала салон по принципу мастера, не ошиблась. Лиза помогла доработать эскиз, была внимательна к просьбам, несколько часов пролетели незаметно. Благодаря вниманию мастера не переживала за процесс и результат.'],
+  ['Нина','29 сентября 2025','масштабный проект',
+   'Обратилась, чтобы воплотить масштабный для меня проект. Елизавета очень ответственно подошла к задумке и помогла разработать эскиз, во время процедуры прислушивалась к просьбам и проявляла стопроцентную заинтересованность.'],
+  ['Алёна','1 сентября 2025','постоянная гостья и ученица',
+   'Знакома с Лизой уже более 3 лет, сделала у неё более 5 татуировок, одна из которых крупный проект. Когда Лиза решила заняться обучением, я была одной из первых, кто записался. Обучение прошло быстро и очень комфортно.'],
+  ['Светлана Рассомагина','16 июля','парные татуировки',
+   'У Лизы не первый раз, делала когда-то дракона на всю руку, сестра к ней ходила перекрывать старое тату, в этот раз с мужем пришли на парные. Всё сделала качественно и быстро, за безопасность и результат можно не переживать.'],
+  ['дарья м.','15 сентября 2025','первая татуировка',
+   'Свою первую татуировку доверила Лизе. Не ошиблась: мастер очень тщательно подходит к работе и прислушивается к просьбам клиента. Через время вернулась к ней за второй. Думаю, на этом не остановлюсь.'],
+  ['Камиль Ахметов','16 июня','доделали старую работу',
+   'Мастер просто супер, доделала мой партак давнишний бесплатно, очень много отдала своего времени на мои прихоти и мой эскиз. Очень ей благодарен.'],
+  ['Ольга Сидорова','16 сентября 2025','приезжала издалека',
+   'Долго думала и искала мастера, и вот решилась. Лиза подобрала подходящее время и день, чтобы я приехала, так как мне ехать не близко. Салон хоть и небольшой, но очень чистый и уютный, приятная музыка и беседа.'],
+  ['elzaakhmatovaaa','17 апреля','крупная работа за два дня',
+   'Всё прошло отлично, аккуратно, быстро. Результатом очень довольна. Забили ногу за 2 дня.'],
+  ['Наталья Воскобойникова','3 марта','впечатление от студии',
+   'Мастер выше всяких похвал, вежлив, да и тапочки дали. Место украшено картинами и тату-эскизами, вернусь сюда не раз.']
+];
+$('revs-wall').innerHTML = REVS.map(([a, d, s, t]) => `
+  <article class="rev"><p>${esc(t)}</p>
+    <div class="who"><b>${esc(a)}</b><span>${esc(s)} · ${esc(d)}</span></div></article>`).join('');
+
+/* ── Форма ── */
+$('what').innerHTML = ['Пока не решил и хочу совета', 'Татуировка по своему эскизу',
+  'Перекрытие или коррекция старой', 'Фрихенд', 'Перманентный макияж бровей',
+  'Обучение или мастер-класс', 'Место в коворкинге']
+  .map(v => `<option>${esc(v)}</option>`).join('');
+
+$('form').addEventListener('submit', e => {
+  e.preventDefault();
+  const f = e.target;
+  const name = f.name.value.trim(), tel = f.tel.value.trim();
+  const okName = !!name;
+  const okTel = tel.replace(/\D/g, '').length >= 10 || /^@[\w\d_]{3,}$/.test(tel);
+  $('e-name').textContent = okName ? '' : 'Как к вам обращаться?';
+  $('e-tel').textContent = okTel ? '' : 'Нужен телефон или ник в телеграме';
+  if (!okName || !okTel) { (okName ? f.tel : f.name).focus(); return; }
+
+  const box = $('ok'), picked = f.what.selectedIndex > 0;
+  box.textContent = name + ', идея записана' +
+    (picked ? ' — «' + f.what.value.toLowerCase() + '»' : '') +
+    '. На настоящем сайте она уже лежала бы у Лизы в телеграме, и дальше вы бы обсуждали эскиз.';
+  box.hidden = false;
+  f.hidden = true;
+  box.scrollIntoView({ block: 'center', behavior: 'smooth' });
+});
+})();
+</script>
+</body>
+</html>
